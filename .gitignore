@@ -1,0 +1,17 @@
+# KiCad backups, autosave, caches, locks
+*.bak
+*-bak/
+*-backups/
+_autosave-*
+fp-info-cache
+*.lck
+~*.lck
+*.kicad_prl
+
+# Editor local history
+.history/
+.vscode/
+
+# Python / CircuitPython
+__pycache__/
+*.pyc
