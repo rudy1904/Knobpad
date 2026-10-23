@@ -57,7 +57,7 @@ ADC1 = GPIO1–10 (pot must go here; ADC2 = GPIO11–20 conflicts with Wi-Fi).
 | LED_DIN | IO16 | R-outer 6 | sits next to GND + VBUS, so LED power and data leave together |
 | KEY1–KEY8 | IO33, IO37, IO38, IO34, IO21, IO17, IO15, IO18 | right side | one side of the module, internal pull-ups, active low |
 
-13 of 27 used. Avoid: IO3 (strapping), IO43/44 (UART0 console). Keep free: IO35/36 (I2C, for an OLED later). Spare: IO2, 4–10, 14 — all ADC1, so a fader can be added later.
+13 of 27 used. Avoid: IO3 (strapping), IO43/44 (UART0 console). Keep free: IO35/36 (I2C, for an OLED later). Spare: IO2, 4–10, 14. IO2 and 4–10 are ADC1 (IO14 is ADC2), so a fader can still be added later.
 The module sits on the back, so its footprint gets flipped to B.Cu — the pin columns mirror left/right as seen from the front. Digital pins are interchangeable, so we re-assign keys at placement to untangle the ratsnest.
 
 ## 4. Footprints (checked against KiCad library tag 10.0.7)
